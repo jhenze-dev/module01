@@ -3,6 +3,8 @@ title: [TITEL]
 template: tset.html
 week: [NUMMER]
 
+page_toc: false
+
 understanding:
   - [UNDERSTANDING-ID]
 ---
@@ -45,6 +47,8 @@ Gebruik in de frontmatter:
     template: tset.html
     week: [NUMMER]
 
+    page_toc: false
+
     understanding:
       - [UNDERSTANDING-ID]
 
@@ -54,6 +58,9 @@ Zet `Thinking Set [NUMMER]` NIET in `title`.
 `template: tset.html` bepaalt het documenttype en `week`
 bepaalt het nummer. De presentatielaag kan daaruit zichtbaar
 `Thinking Set [NUMMER]` combineren met de inhoudelijke titel.
+
+`page_toc: false` zorgt ervoor dat deze Thinking Set geen
+pagina-inhoudsopgave aan de rechterzijde krijgt.
 
 `understanding` bevat alleen de stabiele IDs van eventuele
 Understanding-onderdelen waarnaar vanuit de TSET wordt

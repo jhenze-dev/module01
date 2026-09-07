@@ -3,6 +3,8 @@ title: Problem Set [NUMMER]
 template: pset-index.html
 week: [NUMMER]
 
+page_toc: false
+
 resources:
   - [RESOURCE-GROEP]
 ---
@@ -45,6 +47,8 @@ Gebruik in de frontmatter:
     template: pset-index.html
     week: [NUMMER]
 
+    page_toc: false
+
     resources:
       - [RESOURCE-GROEP]
 
@@ -57,6 +61,9 @@ te inventariseren.
 
 `week` is daarnaast de structurele metadata waarmee web- en
 PDF-rendering de PSET-index aan de juiste week kunnen koppelen.
+
+`page_toc: false` zorgt ervoor dat deze PSET-index geen
+pagina-inhoudsopgave aan de rechterzijde krijgt.
 
 Het weeknummer in `title` en `week` moet altijd gelijk zijn.
 

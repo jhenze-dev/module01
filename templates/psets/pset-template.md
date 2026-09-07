@@ -4,6 +4,8 @@ template: pset.html
 week: [NUMMER]
 level: [less / more]
 
+page_toc: true
+
 understanding:
   - [UNDERSTANDING-ID]
 ---
@@ -38,6 +40,8 @@ Gebruik in de frontmatter:
     week: [NUMMER]
     level: [less / more]
 
+    page_toc: true
+
     understanding:
       - [UNDERSTANDING-ID]
 
@@ -57,6 +61,11 @@ of:
 De leerlingzichtbare formulering `minder vertrouwd` /
 `meer vertrouwd` blijft presentatie en wordt niet in `title`
 opgeslagen.
+
+`page_toc: true` zorgt ervoor dat deze PSET een
+pagina-inhoudsopgave aan de rechterzijde krijgt.
+
+Alleen headings met `{.page-toc}` worden daarin opgenomen.
 
 `understanding` bevat de stabiele IDs van de Understanding-
 onderdelen die deze PSET gebruikt. Laat het veld weg wanneer
@@ -271,26 +280,31 @@ Gebruik in beginsel:
 Badges
 [optioneel: video]
 
-## Waar werk je aan?
+## Waar werk je aan? {.page-toc}
 
-## Probleem
+## Probleem {.page-toc}
 
-## Demo
+## Demo {.page-toc}
 
 ## Background
 [alleen indien functioneel noodzakelijk]
 
-## Understanding
+## Understanding {.page-toc}
 
-## Opdracht
+### [UNDERSTANDING-DOMEIN] {.section-understanding .page-toc}
 
-### Specificatie
+## Opdracht {.page-toc}
 
-### Hints
+### Specificatie {.page-toc}
 
-### Testen
+### Hints {.page-toc}
 
-### Inleveren
+## Testen {.page-toc}
+
+## Reflectie op de oplossing {.page-toc}
+[alleen indien functioneel van toepassing]
+
+## Inleveren {.page-toc}
 
 
 
@@ -411,7 +425,7 @@ operator. Gebruik terminologie consequent.
 <!-- --8<-- "includes/videos.html:[VIDEO]" -->
 
 
-## Waar werk je aan?
+## Waar werk je aan? {.page-toc}
 
 <!--
 ============================================================
@@ -456,7 +470,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **[...]** ...
 
 
-## Probleem
+## Probleem {.page-toc}
 
 <!--
 ============================================================
@@ -514,7 +528,7 @@ Niet noodzakelijk:
 **[Ontwerpvraag.]**
 
 
-## Demo
+## Demo {.page-toc}
 
 <!--
 ============================================================
@@ -587,7 +601,7 @@ Nee -> verwijder deze hele sectie.
 [Alleen invullen indien functioneel noodzakelijk.]
 
 
-## Understanding
+## Understanding {.page-toc}
 
 <!--
 ============================================================
@@ -654,12 +668,12 @@ De benodigde `_content` wordt inline in de PSET opgenomen.
 COMPLETE MODULE-PDF
 -------------------
 De PSET neemt de Understanding niet opnieuw volledig op.
-Gebruik daar:
 
-    {{ understanding_reference(understanding) }}
+Gebruik in de PSET dezelfde domein-aanroepen als voor de website.
+De renderpipeline bepaalt per uitvoervorm hoe deze worden weergegeven.
 
-De renderer bouwt daarmee een verwijzing naar de centrale
-Understanding-pagina's en de bijbehorende paginanummers.
+De renderer bouwt in de Module-PDF daarmee een verwijzing naar de
+centrale Understanding-pagina's en de bijbehorende paginanummers.
 
 Schrijf nooit vaste paginanummers in de PSET zelf.
 
@@ -683,10 +697,27 @@ De focusdimensie van de week krijgt extra nadruk, maar beide
 processen blijven aanwezig.
 -->
 
-{{ understanding_reference(understanding) }}
+### [UNDERSTANDING-DOMEIN] {.section-understanding .page-toc}
+
+{{ understanding_reference(understanding, domain="[DOMEIN-ID]") }}
+
+<!--
+Herhaal dit blok voor ieder Understanding-domein dat in de
+frontmatter van deze PSET voorkomt.
+
+Voorbeeld:
+
+    ### Python {.section-understanding .page-toc}
+
+    {{ understanding_reference(understanding, domain="python") }}
+
+    ### Algorithms & Efficiency {.section-understanding .page-toc}
+
+    {{ understanding_reference(understanding, domain="algorithms-efficiency") }}
+-->
 
 
-## Opdracht
+## Opdracht {.page-toc}
 
 <!--
 ============================================================
@@ -711,7 +742,7 @@ de concrete PSET.
 Nu ga je deze kennis gebruiken om het probleem van **[TITEL]** op te lossen.
 
 
-### Specificatie
+### Specificatie {.page-toc}
 
 <!--
 ============================================================
@@ -765,7 +796,7 @@ Je programma moet:
 [Belangrijk eindcriterium.]
 
 
-### Hints
+### Hints {.page-toc}
 
 <!--
 ============================================================
@@ -881,7 +912,7 @@ daadwerkelijke probleem.
 -->
 
 
-### Testen
+## Testen {.page-toc}
 
 <!--
 ============================================================
@@ -1002,7 +1033,7 @@ Als dat niet zo is, onderzoek dan waar je algoritme of programma iets anders doe
 **[Afsluitende vraag gekoppeld aan het testcriterium.]**
 
 
-### Inleveren
+## Inleveren {.page-toc}
 
 <!--
 ============================================================

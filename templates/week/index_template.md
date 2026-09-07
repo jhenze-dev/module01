@@ -3,6 +3,8 @@ title: [TITEL]
 template: week.html
 week: [NUMMER]
 
+page_toc: false
+
 # Alleen opnemen wanneer deze week resources gebruikt.
 resources:
   - [RESOURCE-ID]
@@ -47,6 +49,8 @@ Gebruik in de frontmatter:
     template: week.html
     week: [NUMMER]
 
+    page_toc: false
+
 Wanneer de week externe of multimedia-resources gebruikt:
 
     resources:
@@ -61,6 +65,9 @@ Zet `Week [NUMMER] —` NIET in `title`.
 `template: week.html` bepaalt het documenttype en `week`
 bepaalt het weeknummer. De presentatielaag kan daaruit
 zichtbaar bijvoorbeeld `Week 3 — Slimme keuzes` maken.
+
+`page_toc: false` zorgt ervoor dat deze week-index geen
+pagina-inhoudsopgave aan de rechterzijde krijgt.
 
 `resources` bevat de stabiele IDs van resources die op deze
 weekpagina worden gebruikt, bijvoorbeeld een video.
