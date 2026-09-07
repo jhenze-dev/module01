@@ -83,6 +83,7 @@ extra_css:
 
   # Paginatypes
   - assets/css/homepage.css
+  - assets/css/guide.css
   - assets/css/week.css
   - assets/css/tset.css
   - assets/css/pset-index.css
