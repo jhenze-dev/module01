@@ -4,6 +4,8 @@ template: pset.html
 week: 3
 level: less
 
+page_toc: true
+
 understanding:
   - python.boolean-expressions
   - python.comparison-operators
@@ -23,8 +25,7 @@ understanding:
 --8<-- "includes/badges.html:ct-algoritmen"
 --8<-- "includes/badges.html:process-expressing"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren** hoe stappen en beslissingen logisch met elkaar samenhangen.
@@ -32,8 +33,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een oplossing automatiseren** door voorwaarden en bijbehorende acties vast te leggen.
 - Ik kan **een algoritmische oplossing programmeren** met `if`, `elif` en `else`.
 
-## Probleem
-
+## Probleem {.page-toc}
 In een pot zit een onbekend aantal jellybeans.
 
 De gebruiker voert een gok in. Een computersysteem moet deze ingevoerde gok vergelijken met het geheime aantal en op basis daarvan automatisch bepalen welke terugkoppeling aan de gebruiker wordt gegeven:
@@ -46,8 +46,7 @@ Een computer kan alleen de juiste beslissing nemen wanneer **alle mogelijke situ
 
 **Hoe ontwerp je een systeem dat op basis van voorwaarden automatisch bepaalt welke feedback aan een gebruiker wordt gegeven?**
 
-## Demo
-
+## Demo {.page-toc}
 <!--
 PAS LATER INVULLEN.
 
@@ -59,16 +58,15 @@ Doel:
 - laat niet zien HOE het programma is gebouwd.
 -->
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Jellybeans in a Jar** op te lossen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - het geheime aantal jellybeans in een variabele bewaren;
@@ -86,8 +84,7 @@ Gebruik als invoer een **geheel getal**. Dat is in deze Problem Set geldige invo
 
 Andere invoer hoef je in deze Problem Set niet af te handelen.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke situaties moet je programma herkennen?"
@@ -146,8 +143,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Programmeer vanuit je ontwerp verder.
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als je controleert of **alle mogelijke situaties correct worden afgehandeld**.
 
 Noteer eerst welk geheime aantal je in je programma gebruikt.
@@ -176,8 +172,7 @@ Als dat niet zo is, onderzoek dan welke stap of beslissing in je algoritme niet 
 
 **Kun je met deze drie testgevallen aantonen dat iedere mogelijke situatie correct wordt afgehandeld en iedere gok precies één reactie oplevert?**
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

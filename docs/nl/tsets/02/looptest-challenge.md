@@ -3,6 +3,8 @@ title: Looptest Challenge
 template: tset.html
 week: 2
 
+page_toc: false
+
 understanding:
   - visual-first.ipo
 ---

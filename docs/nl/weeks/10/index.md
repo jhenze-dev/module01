@@ -1,6 +1,8 @@
-﻿---
+---
 title: Week 10 — Herinneringen beheren
 template: week.html
+
+page_toc: false
 ---
 
 # Week 10 — Herinneringen beheren

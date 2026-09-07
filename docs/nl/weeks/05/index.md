@@ -1,7 +1,9 @@
-﻿---
+---
 title: Gegevens Verzamelen
 template: week.html
 week: 5
+
+page_toc: false
 
 resources:
   - video.sorting-hat

@@ -1,6 +1,8 @@
-﻿---
+---
 title: Week 0 — Denken als een computer
 template: week.html
+
+page_toc: false
 ---
 
 # Week 0 — Denken als een computer

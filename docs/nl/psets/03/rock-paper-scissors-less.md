@@ -1,8 +1,10 @@
-﻿---
+---
 title: Rock Paper Scissors
 template: pset.html
 week: 3
 level: less
+
+page_toc: true
 
 understanding:
   - python.and
@@ -17,8 +19,7 @@ understanding:
 --8<-- "includes/badges.html:ct-algoritmen"
 --8<-- "includes/badges.html:process-expressing"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren** hoe stappen en beslissingen logisch met elkaar samenhangen.
@@ -26,8 +27,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een oplossing automatiseren** door spelregels vast te leggen als conditions en bijbehorende branches.
 - Ik kan **een algoritmische oplossing programmeren** met `if`, `elif` en `else`.
 
-## Probleem
-
+## Probleem {.page-toc}
 Bij Rock Paper Scissors maken twee spelers ieder één keuze:
 
 - **Rock**
@@ -48,8 +48,7 @@ Een computer kan complexe beslissingen alleen correct nemen wanneer **alle regel
 
 **Hoe ontwerp je een beslissysteem dat op basis van spelregels automatisch de juiste uitkomst bepaalt?**
 
-## Demo
-
+## Demo {.page-toc}
 <!--
 PAS LATER INVULLEN.
 
@@ -61,16 +60,15 @@ Doel:
 - laat niet zien HOE het programma is gebouwd.
 -->
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Rock Paper Scissors** op te lossen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - de keuze van speler 1 vragen;
@@ -99,8 +97,7 @@ Dit zijn in deze Problem Set de geldige keuzes.
 
 Andere invoer hoef je in deze Problem Set niet af te handelen.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke mogelijke uitkomsten zijn er?"
@@ -159,8 +156,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Programmeer vanuit je ontwerp verder.
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als je controleert of **iedere mogelijke combinatie van keuzes correct wordt afgehandeld**.
 
 Bij Rock Paper Scissors zijn er negen mogelijke combinaties. Test ze allemaal.
@@ -198,8 +194,7 @@ Als dat niet zo is, onderzoek dan welke condition of branch in je algoritme niet
 
 **Kun je met deze negen testgevallen aantonen dat iedere mogelijke combinatie correct wordt afgehandeld en steeds precies één uitkomst oplevert?**
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

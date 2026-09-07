@@ -4,6 +4,8 @@ template: pset.html
 week: 6
 level: more
 
+page_toc: true
+
 understanding:
   - python.for-loops
   - python.iterating-lists
@@ -21,8 +23,7 @@ understanding:
 --8<-- "includes/badges.html:process-formulating"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **een volledige verzameling systematisch verwerken zonder elementen over te slaan**.
@@ -30,8 +31,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **met een Trace Table zichtbaar maken hoe de toestand tijdens de verwerking verandert**.
 - Ik kan **patronen in verschillende verwerkingen vergelijken, interpreteren en gebruiken om mijn oplossing te verantwoorden**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Monk heeft een verzameling tijdschriften die op dit moment nog niet op volgorde staat.
 
 Ieder tijdschrift heeft een nummer. Voordat Monk de verzameling kan ordenen, wil hij weten welk tijdschrift het kleinste nummer heeft, welk tijdschrift het grootste nummer heeft en op welke positie beide tijdschriften nu staan.
@@ -42,16 +42,20 @@ Een computersysteem moet daarvoor de volledige verzameling systematisch kunnen v
 
 **Hoe ontwerp je een algoritme dat een volledige gegevensverzameling systematisch verwerkt?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
+
+### Algorithms & Efficiency {.section-understanding .page-toc}
+
+{{ understanding_reference(understanding, domain="algorithms-efficiency") }}
 
 Wil je verder onderzoeken hoe je het aantal bewerkingen als functie van `n` kunt beschrijven?
 
 Lees dan [Aantal bewerkingen als functie van n](../../understanding/algorithms-efficiency/describing-with-n/operation-count-function.md).
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om **Monk's Magazine Check** te maken en het gedrag van je verwerking verder te onderzoeken.
 
 Gebruik eerst dezelfde verzameling als bij de Thinking Set:
@@ -68,8 +72,7 @@ Laat deze pseudocode daarna als comments in je `.py`-bestand staan en bouw je Py
 
 Maak een **Trace Table** waarin zichtbaar wordt hoe de onthouden informatie tijdens de verwerking verandert. Gebruik de Trace Table daarna om het gedrag van dezelfde verwerking bij verschillende volgordes te vergelijken.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma gebruikt als eerste verzameling:
 
 ```python
@@ -93,8 +96,7 @@ Een wijziging telt alleen wanneer een eerder onthouden minimum of maximum daadwe
 
 Wanneer je alleen de inhoud van `magazines` vervangt door dezelfde getallen in een andere volgorde, moet dezelfde verwerking blijven werken.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke toestand verandert tijdens de verwerking?"
@@ -125,8 +127,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Als je daarnaast de rest van je programma moet aanpassen, onderzoek dan of je verwerking werkelijk algemeen voor een list is ontworpen.
 
-### Testen
-
+## Testen {.page-toc}
 Onderzoek je programma met dezelfde tien getallen in drie verschillende volgordes.
 
 | Test | List | Verwacht kleinste + index | Verwacht grootste + index | Verwachte wijzigingen minimum | Verwachte wijzigingen maximum | Werkelijke uitkomst |
@@ -151,14 +152,12 @@ Vergelijk daarna de drie tests en controleer:
 
 Als de werkelijke resultaten niet overeenkomen met je voorspellingen, onderzoek dan waardoor het verschil ontstaat en pas je pseudocode en programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **pseudocode**, je **Trace Tables** en de resultaten van de drie volgordes.
 
 Beschrijf een patroon dat je in de drie verwerkingen hebt gevonden. Leg met concrete resultaten uit wat ondanks de veranderde volgorde hetzelfde bleef, wat veranderde en waarom jouw oplossingsrichting geschikt is om iedere verzameling met dezelfde werkwijze te verwerken.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

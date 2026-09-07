@@ -4,6 +4,8 @@ template: pset.html
 week: 2
 level: less
 
+page_toc: true
+
 understanding:
   - python.variables
   - python.arithmetic-expressions
@@ -19,8 +21,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan de benodigde **gegevens verzamelen** voor een analyse.
@@ -29,8 +30,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan informatie **presenteren in de gekozen representatievorm**.
 
 
-## Probleem
-
+## Probleem {.page-toc}
 In *Forrest Gump* zien we dat Forrest snel rent.
 
 Maar hoe snel rent hij eigenlijk?
@@ -42,27 +42,25 @@ Een computer kan alleen berekeningen uitvoeren wanneer informatie uit de werkeli
 **Hoe ontwerp je een systeem dat een loopprestatie omzet naar gegevens waarmee een computer snelheid en andere prestaties automatisch kan berekenen en presenteren?**
 
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
 [Meer over IPO-diagrammen](../../understanding/visual-first/ipo.md)
 
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **How Fast Is Forrest?** op te lossen.
 
 Ontwerp en programmeer een systeem dat informatie over een loopprestatie verwerkt en daaruit een overzichtelijk prestatierapport maakt.
 
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma vraagt de gebruiker om:
 
 - de **afstand in meters**;
@@ -86,8 +84,7 @@ Gebruik voor afstand en tijd **positieve getallen**. Waarden groter dan `0` zijn
 Andere invoer hoef je in deze Problem Set niet af te handelen.
 
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 
@@ -138,8 +135,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
     Bedenk ook welke waarden als `int` en welke als `float` moeten worden gebruikt zodat Python ermee kan rekenen.
 
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als het bij verschillende afstanden en tijden de juiste resultaten berekent en presenteert.
 
 Voer minimaal de volgende tests uit:
@@ -176,8 +172,7 @@ Als dat niet zo is, onderzoek dan waar je informatiemodel, berekening of program
 **Kun je met deze drie testgevallen aantonen dat je programma verschillende loopprestaties correct verwerkt en alle ingevoerde en berekende gegevens in het prestatierapport toont?**
 
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma vraagt om een **afstand in meters** en een **tijd in seconden**;

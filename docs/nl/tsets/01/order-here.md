@@ -1,7 +1,9 @@
-﻿---
+---
 title: Order Here!
 template: tset.html
 week: 1
+
+page_toc: false
 
 understanding:
   - visual-first.flowcharts-basics

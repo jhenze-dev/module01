@@ -4,6 +4,8 @@ template: pset.html
 week: 6
 level: less
 
+page_toc: true
+
 understanding:
   - python.for-loops
   - python.iterating-lists
@@ -22,8 +24,7 @@ understanding:
 --8<-- "includes/badges.html:process-formulating"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **een volledige verzameling systematisch verwerken zonder elementen over te slaan**.
@@ -31,8 +32,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **met een Trace Table zichtbaar maken hoe de toestand tijdens de verwerking verandert**.
 - Ik kan **patronen in de verwerking herkennen en uitleggen wat deze betekenen voor mijn oplossing**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Monk heeft een verzameling tijdschriften die op dit moment nog niet op volgorde staat.
 
 Ieder tijdschrift heeft een nummer. Voordat Monk de verzameling kan ordenen, wil hij weten welk tijdschrift het kleinste nummer heeft, welk tijdschrift het grootste nummer heeft en op welke positie beide tijdschriften nu staan.
@@ -41,16 +41,20 @@ Een computersysteem moet daarvoor de volledige verzameling systematisch kunnen v
 
 **Hoe ontwerp je een algoritme dat een volledige gegevensverzameling systematisch verwerkt?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
+
+### Algorithms & Efficiency {.section-understanding .page-toc}
+
+{{ understanding_reference(understanding, domain="algorithms-efficiency") }}
 
 Wil je verder onderzoeken hoe je het aantal bewerkingen als functie van `n` kunt beschrijven?
 
 Lees dan [Aantal bewerkingen als functie van n](../../understanding/algorithms-efficiency/describing-with-n/operation-count-function.md).
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om **Monk's Magazine Check** te maken.
 
 Gebruik dezelfde verzameling als bij de Thinking Set:
@@ -73,8 +77,7 @@ Maak ook een **Trace Table** waarmee je vóór het uitvoeren van je programma vo
 - welk grootste nummer tot dat moment is onthouden en op welke index het staat;
 - of deze stap een nieuw minimum, een nieuw maximum of geen verandering oplevert.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma gebruikt als eerste verzameling:
 
 ```python
@@ -95,8 +98,7 @@ Je programma moet:
 
 Wanneer je voor een test alleen de inhoud van `magazines` vervangt door een andere niet-lege list met getallen, moet dezelfde verwerking blijven werken.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke informatie moet je onthouden?"
@@ -123,8 +125,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Bekijk in de Understanding hoe `range()` kan worden gecombineerd met de lengte van een list.
 
-### Testen
-
+## Testen {.page-toc}
 Je programma werkt pas betrouwbaar wanneer het voor verschillende verzamelingen de juiste waarden én de juiste indexes oplevert.
 
 Voer minimaal de volgende tests uit.
@@ -150,14 +151,12 @@ Controleer na iedere test:
 
 Als de werkelijke uitvoer niet overeenkomt met je voorspelling, onderzoek dan waardoor het verschil ontstaat en pas je pseudocode en programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **pseudocode**, je **Trace Table** en je uiteindelijke **Python-programma**.
 
 Kies één stap uit je Trace Table waarin het onthouden minimum of maximum verandert. Leg met dit concrete voorbeeld uit welke informatie je programma tijdens de verwerking moet onthouden en waarom jouw oplossingsrichting geschikt is om de volledige verzameling systematisch te verwerken.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

@@ -3,6 +3,8 @@ title: Problem Set 6
 template: pset-index.html
 week: 6
 
+page_toc: false
+
 resources:
   - w3schools.week6
 ---

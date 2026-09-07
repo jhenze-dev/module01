@@ -4,6 +4,8 @@ template: pset.html
 week: 6
 level: less
 
+page_toc: true
+
 understanding:
   - python.changing-list-items
   - algorithms-efficiency.repeated-processing-with-n-basics
@@ -19,8 +21,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren hoe opeenvolgende stappen logisch samenhangen in een algoritme**.
@@ -28,8 +29,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **met een Trace Table zichtbaar maken hoe een verzameling stap voor stap wordt geordend**.
 - Ik kan **met testresultaten uitleggen waarom mijn gekozen strategie werkt**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Monk wil zijn volledige verzameling tijdschriften op nummer ordenen.
 
 Hij gebruikt daarvoor een vaste werkwijze: hij bekijkt steeds **twee tijdschriften die naast elkaar staan**. Staan ze in de verkeerde volgorde, dan verwisselt hij ze. Daarna gaat hij verder met het volgende paar.
@@ -40,16 +40,20 @@ Een computer moet deze werkwijze systematisch kunnen uitvoeren totdat de volledi
 
 **Hoe ontwerp je een algoritme dat een verzameling systematisch ordent?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
+
+### Algorithms & Efficiency {.section-understanding .page-toc}
+
+{{ understanding_reference(understanding, domain="algorithms-efficiency") }}
 
 Wil je ook onderzoeken hoe je het aantal bewerkingen algemeen kunt beschrijven wanneer een verwerking meerdere keren wordt herhaald?
 
 Lees dan [Aantal bewerkingen bij herhaling](../../understanding/algorithms-efficiency/repeated-processing-with-n/operation-count-with-repetition.md).
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Maak **Monk's Perfect Order**.
 
 Gebruik dezelfde verzameling tijdschriftnummers:
@@ -78,8 +82,7 @@ Maak een **Trace Table** waarin je per vergelijking minimaal noteert:
 
 Gebruik je Trace Table daarna als ontwerp voor je Python-programma.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma gebruikt als eerste verzameling:
 
 ```python
@@ -100,8 +103,7 @@ Je programma moet:
 
 Je mag voor het ordenen **geen** `.sort()` of `sorted()` gebruiken.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Wat gebeurt er in één ronde?"
@@ -126,8 +128,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Kijk na de eerste ronde welke waarden al goed staan en welke waarde nog meer dan één positie moet opschuiven.
 
-### Testen
-
+## Testen {.page-toc}
 Voorspel eerst voor iedere test hoe de list er na alle rondes uit moet zien.
 
 | Test | List | Verwachte geordende list | Werkelijke geordende list |
@@ -148,16 +149,14 @@ Controleer daarnaast met je Trace Table van `[4, 1, 3, 2]`:
 
 Als een werkelijke uitkomst niet overeenkomt met je voorspelling, onderzoek dan in welke vergelijking of ronde het verschil ontstaat en pas je pseudocode en programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **pseudocode**, je **Trace Table** en je testresultaten.
 
 Kies één concrete wisseling uit je Trace Table en leg uit waarom die wisseling volgens jouw algoritme nodig was.
 
 Leg daarna uit waarom meerdere rondes nodig kunnen zijn om de volledige verzameling te ordenen en gebruik daarbij een concreet voorbeeld uit je eigen Trace Table of testresultaten.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

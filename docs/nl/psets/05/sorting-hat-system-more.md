@@ -4,6 +4,8 @@ template: pset.html
 week: 5
 level: more
 
+page_toc: true
+
 understanding:
   - python.lists-and-conditions
 ---
@@ -18,8 +20,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **analyseren welke informatie relevant is** voor een probleem.
@@ -27,8 +28,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een proces of systeem construeren op basis van een model**.
 - Ik kan **uitleggen waarom een gekozen datastructuur geschikt is voor een probleem**.
 
-## Probleem
-
+## Probleem {.page-toc}
 De Sorting Hat verdeelt nieuwe Hogwarts-leerlingen over Gryffindor, Ravenclaw, Hufflepuff en Slytherin.
 
 Een computersysteem moet meerdere leerlingen kunnen opslaan en de opgeslagen gegevens vervolgens kunnen gebruiken om te bepalen in welk huis een leerling is ingedeeld.
@@ -37,12 +37,12 @@ Terwijl het systeem wordt gebruikt, komen er bovendien nieuwe leerlingen bij. De
 
 **Hoe ontwerp je een systeem dat opgeslagen gegevens kan doorzoeken en gebruiken om een beslissing te nemen?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je de opgeslagen gegevens gebruiken in een interactief **Sorting Hat System**.
 
 Ontwerp en programmeer een systeem waarin de gebruiker nieuwe leerlingen kan registreren en opgeslagen leerlingen kan opzoeken.
@@ -55,8 +55,7 @@ Maak voordat je programmeert een **datastructuurdiagram** waarin zichtbaar is we
 
 Werk daarna de stappen van je systeem uit in **pseudocode** als genummerde comments in je `.py`-bestand. Bouw vervolgens de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je systeem gebruikt de vier Hogwarts-huizen:
 
 - Gryffindor
@@ -91,8 +90,7 @@ Daarnaast moet het programma:
 - een ongeldige menukeuze afwijzen en opnieuw een keuze vragen;
 - alleen stoppen wanneer de gebruiker optie `3` kiest.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke gegevens veranderen tijdens het gebruik?"
@@ -129,8 +127,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Bedenk wat het programma moet doen wanneer de gebruiker bijvoorbeeld `7` invoert.
 
-### Testen
-
+## Testen {.page-toc}
 Test het systeem niet alleen met losse handelingen, maar ook met een **volledige reeks handelingen binnen dezelfde uitvoering**.
 
 Voer minimaal het volgende testscenario uit:
@@ -160,16 +157,14 @@ De leerling moet dan nog steeds worden gevonden.
 
 Als de werkelijke resultaten niet overeenkomen met je voorspellingen, onderzoek dan waardoor het verschil ontstaat en pas je programma aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **datastructuurdiagram** en je uiteindelijke **Python-programma**.
 
 Waarom is de gekozen datastructuur geschikt voor een systeem waarin gegevens tijdens het gebruik worden toegevoegd én later worden gebruikt om beslissingen te nemen?
 
 Onderbouw je antwoord met concrete voorbeelden uit je eigen datastructuurdiagram en programma.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

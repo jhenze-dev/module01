@@ -1,7 +1,9 @@
-﻿---
+---
 title: Mens en Machine
 template: week.html
 week: 1
+
+page_toc: false
 
 resources:
   - video.five-easy-pieces

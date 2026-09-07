@@ -4,6 +4,8 @@ template: pset.html
 week: 5
 level: more
 
+page_toc: true
+
 understanding:
   - python.lists
   - python.list-indexes
@@ -21,28 +23,26 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **gegevens ordenen in een bruikbare structuur**.
 - Ik kan **informatie presenteren in een datastructuurdiagram**.
 - Ik kan **uitleggen waarom een gekozen datastructuur geschikt is voor een probleem**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Op Hogwarts worden ieder jaar nieuwe leerlingen verdeeld over Gryffindor, Ravenclaw, Hufflepuff en Slytherin.
 
 Naarmate er meer leerlingen worden ingeschreven, groeit ook de hoeveelheid informatie die Hogwarts moet beheren. De administratie moet overzichtelijk blijven en gegevens moeten later weer kunnen worden teruggevonden.
 
 **Hoe ontwerp je een programma dat meerdere gegevens overzichtelijk kan opslaan en terugvinden?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **House Administration** op te lossen.
 
 Ontwerp en programmeer een administratie voor alle vier de Hogwarts-huizen waarmee leerlingen kunnen worden opgeslagen en verschillende gegevens uit de administratie kunnen worden opgevraagd.
@@ -51,8 +51,7 @@ Maak voordat je programmeert een **datastructuurdiagram** van de volledige admin
 
 Werk daarna de stappen van je programma uit in **pseudocode** als genummerde comments in je `.py`-bestand. Bouw vervolgens de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Gebruik in je administratie de vier Hogwarts-huizen:
 
 - Gryffindor
@@ -73,8 +72,7 @@ Je programma moet:
 
 Wanneer beide gekozen huizen evenveel leerlingen bevatten, moet je programma dat ook kunnen aangeven.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Modelleer eerst de volledige administratie"
@@ -108,8 +106,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Denk ook aan de situatie waarin beide aantallen gelijk zijn.
 
-### Testen
-
+## Testen {.page-toc}
 Test de volledige administratie met meerdere wijzigingen en opvragingen.
 
 Maak minimaal zes testgevallen.
@@ -136,16 +133,14 @@ Bepaal voor iedere test vooraf:
 
 Als de werkelijke resultaten niet overeenkomen met je voorspellingen, onderzoek dan waardoor het verschil ontstaat en pas je programma aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **datastructuurdiagram** en je uiteindelijke **Python-programma**.
 
 Waarom is de datastructuur die je hebt gekozen geschikt om de gegevens van de vier Hogwarts-huizen op te slaan en terug te vinden?
 
 Onderbouw je antwoord met concrete voorbeelden uit je eigen datastructuurdiagram en programma.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

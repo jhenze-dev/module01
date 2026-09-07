@@ -3,6 +3,8 @@ title: Slimme keuzes
 template: week.html
 week: 3
 
+page_toc: false
+
 resources:
   - video.jellybeans
 ---

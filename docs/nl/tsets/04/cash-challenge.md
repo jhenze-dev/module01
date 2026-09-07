@@ -1,7 +1,9 @@
-﻿---
+---
 title: Cash Challenge
 template: tset.html
 week: 4
+
+page_toc: false
 
 understanding:
   - visual-first.flowcharts-while-loop

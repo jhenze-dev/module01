@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import re
 
 
 def _get_entry(
@@ -192,10 +193,64 @@ def _build_web_links(
     )
 
 
+def _shift_inline_headings(
+    content: str,
+) -> str:
+    """
+    Schuif headings in inline Understanding-content één niveau omlaag.
+
+    H3 -> H4
+    H4 -> H5
+    H5 -> H6
+
+    Code fences blijven ongemoeid.
+    """
+
+    lines = content.splitlines()
+
+    result = []
+    in_fence = False
+    fence_marker = None
+
+    for line in lines:
+
+        stripped = line.lstrip()
+
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+
+            marker = stripped[:3]
+
+            if not in_fence:
+                in_fence = True
+                fence_marker = marker
+
+            elif marker == fence_marker:
+                in_fence = False
+                fence_marker = None
+
+            result.append(line)
+            continue
+
+        if not in_fence:
+            line = re.sub(
+                r"^(\s*)(#{3,5})(\s+)",
+                lambda match:
+                    f"{match.group(1)}"
+                    f"#{match.group(2)}"
+                    f"{match.group(3)}",
+                line,
+            )
+
+        result.append(line)
+
+    return "\n".join(result)
+
+
 def _build_web_inline(
     items: list[str],
     catalog: dict,
     docs_root: str | Path,
+    shift_headings: bool = False,
 ) -> str:
     """
     Neem voor web de centrale Understanding-_content
@@ -232,6 +287,11 @@ def _build_web_inline(
             encoding="utf-8"
         ).strip()
 
+        if shift_headings:
+            content = _shift_inline_headings(
+                content
+            )
+
         sections.append(
             content
         )
@@ -249,6 +309,7 @@ def understanding_reference(
     page_template: str = "",
     docs_root: str | Path | None = None,
     current_source_path: str | Path | None = None,
+    domain: str | None = None,
 ) -> str:
     """
     Render Understanding afhankelijk van uitvoervorm.
@@ -266,6 +327,16 @@ def understanding_reference(
     zodat Understanding-content niet onverwacht wordt
     gedupliceerd.
     """
+
+    if not items:
+        return ""
+
+    if domain is not None:
+        items = [
+            item
+            for item in items
+            if item.split(".", 1)[0] == domain
+        ]
 
     if not items:
         return ""
@@ -289,6 +360,7 @@ def understanding_reference(
             items=items,
             catalog=catalog,
             docs_root=docs_root,
+            shift_headings=domain is not None,
         )
 
     if current_source_path is None:

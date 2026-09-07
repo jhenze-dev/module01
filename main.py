@@ -27,6 +27,9 @@ from helpers.resources import (
     resources_index as build_resources_index,
 )
 
+from helpers.sections import (
+    wrap_sections,
+)
 
 # ---------------------------------------------------------
 # Projectstructuur
@@ -119,7 +122,7 @@ def define_env(env):
     )
 
     @env.macro
-    def understanding_reference(items):
+    def understanding_reference(items, domain=None):
         """
         MkDocs-macro voor Understanding.
 
@@ -144,6 +147,7 @@ def define_env(env):
             ),
             docs_root=DOCS_DIR,
             current_source_path=page.file.src_path,
+            domain=domain,
         )
 
     @env.macro
@@ -215,6 +219,25 @@ def on_pre_page_macros(env):
     )
 
     _mermaid_assets_built = True
+
+
+def on_post_page_macros(env):
+    """
+    Voeg website-secties toe nadat de macros zijn verwerkt,
+    maar voordat Markdown naar HTML wordt gerenderd.
+    """
+
+    render_mode = os.getenv(
+        "RENDER_MODE",
+        "web",
+    )
+
+    if render_mode != "web":
+        return
+
+    env.markdown = wrap_sections(
+        env.markdown
+    )
 
 
 # ---------------------------------------------------------

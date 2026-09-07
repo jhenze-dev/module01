@@ -1,7 +1,9 @@
-﻿---
+---
 title: Patronen Ontdekken
 template: week.html
 week: 6
+
+page_toc: false
 
 resources:
   - video.monk-magazines

@@ -4,6 +4,8 @@ template: pset.html
 week: 6
 level: more
 
+page_toc: true
+
 understanding:
   - python.changing-list-items
   - algorithms-efficiency.repeated-processing-with-n-basics
@@ -19,8 +21,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren hoe opeenvolgende stappen logisch samenhangen in een algoritme**.
@@ -28,8 +29,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **het gedrag van een sorteeralgoritme onderzoeken met een Trace Table en meetgegevens**.
 - Ik kan **mogelijke oplossingsstrategieën analyseren en mijn gekozen strategie verantwoorden met resultaten uit mijn eigen tests**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Monk wil zijn volledige verzameling tijdschriften op nummer ordenen.
 
 Hij gebruikt daarvoor een vaste werkwijze: hij bekijkt steeds **twee tijdschriften die naast elkaar staan**. Staan ze in de verkeerde volgorde, dan verwisselt hij ze. Daarna gaat hij verder met het volgende paar.
@@ -40,16 +40,20 @@ Een computer moet de verzameling daarom systematisch ordenen, het verloop van he
 
 **Hoe ontwerp je een algoritme dat een verzameling systematisch ordent en hoe onderzoek je de gekozen strategie?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
+
+### Algorithms & Efficiency {.section-understanding .page-toc}
+
+{{ understanding_reference(understanding, domain="algorithms-efficiency") }}
 
 Wil je ook onderzoeken hoe je het aantal bewerkingen algemeen kunt beschrijven wanneer een verwerking meerdere keren wordt herhaald?
 
 Lees dan [Aantal bewerkingen bij herhaling](../../understanding/algorithms-efficiency/repeated-processing-with-n/operation-count-with-repetition.md).
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Maak de uitgebreide versie van **Monk's Perfect Order**.
 
 Gebruik eerst:
@@ -73,8 +77,7 @@ Maak daarnaast een **Trace Table** waarin je voor minimaal één test zichtbaar 
 
 Ontwerp nadat je programma werkt ook **een tweede mogelijke strategie** voor hetzelfde ordeningsprobleem. Werk deze tweede strategie alleen uit in pseudocode; je hoeft haar niet te programmeren. Gebruik de vergelijking met je werkende strategie later in je reflectie.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma gebruikt als eerste verzameling:
 
 ```python
@@ -101,8 +104,7 @@ Iedere volledige ronde vergelijkt alle aangrenzende paren van links naar rechts.
 
 Je mag voor het ordenen **geen** `.sort()` of `sorted()` gebruiken.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Wat moet je per ronde weten?"
@@ -133,8 +135,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Welke eerder geleerde vorm van herhaling past bij zo'n voorwaarde?
 
-### Testen
-
+## Testen {.page-toc}
 Gebruik minimaal de volgende situaties.
 
 Voorspel **vooraf** de uiteindelijke geordende list en de aantallen rondes, vergelijkingen en wisselingen.
@@ -168,8 +169,7 @@ Controleer met je tests:
 
 Als een werkelijke uitkomst niet overeenkomt met je voorspelling, gebruik je Trace Table om te bepalen in welke ronde of vergelijking het verschil ontstaat en pas je pseudocode en programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Gebruik je **pseudocode**, **Trace Table** en **testresultaten** als bewijs.
 
 Beantwoord:
@@ -178,8 +178,7 @@ Beantwoord:
 2. Waarom weet je dat de verzameling correct geordend is wanneer een volledige ronde geen wisseling meer oplevert?
 3. Vergelijk je geprogrammeerde strategie met de tweede strategie die je in pseudocode hebt ontworpen. Welke oplossingsrichting vind je op basis van je eigen analyse het meest kansrijk en waarom?
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

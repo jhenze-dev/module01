@@ -4,6 +4,8 @@ template: pset.html
 week: 5
 level: less
 
+page_toc: true
+
 understanding:
   - python.lists-and-conditions
 ---
@@ -18,8 +20,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **analyseren welke informatie relevant is** voor een probleem.
@@ -27,8 +28,7 @@ In deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een proces of systeem construeren op basis van een model**.
 - Ik kan **uitleggen waarom een gekozen datastructuur geschikt is voor een probleem**.
 
-## Probleem
-
+## Probleem {.page-toc}
 De Sorting Hat heeft leerlingen over de vier huizen van Hogwarts verdeeld.
 
 Een computersysteem moet deze leerlingen kunnen opslaan en later kunnen bepalen in welk huis een leerling is ingedeeld.
@@ -37,12 +37,12 @@ Het systeem moet daarvoor de opgeslagen gegevens kunnen gebruiken om een besliss
 
 **Hoe ontwerp je een systeem dat opgeslagen gegevens kan doorzoeken en gebruiken om een beslissing te nemen?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je de opgeslagen gegevens gebruiken om het probleem van het **Sorting Hat System** op te lossen.
 
 Ontwerp en programmeer een systeem dat de naam van een leerling ontvangt en op basis van opgeslagen gegevens bepaalt in welk Hogwarts-huis deze leerling zit.
@@ -51,8 +51,7 @@ Maak voordat je programmeert een **datastructuurdiagram** waarin zichtbaar is we
 
 Werk daarna de stappen van je systeem uit in **pseudocode** als genummerde comments in je `.py`-bestand. Bouw vervolgens de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je systeem gebruikt vier lists met minimaal twee opgeslagen leerlingen per huis:
 
 - Gryffindor
@@ -72,8 +71,7 @@ Je programma moet:
 
 Per zoekopdracht moet het programma precies één uitkomst geven.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke informatie bepaalt de uitkomst?"
@@ -102,8 +100,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Kijk naar de samenhang tussen je conditions en branches.
 
-### Testen
-
+## Testen {.page-toc}
 Het Sorting Hat System is pas betrouwbaar wanneer **iedere mogelijke soort zoekuitkomst** correct wordt afgehandeld.
 
 Gebruik voor je tests namen waarvan je vooraf weet in welke list ze staan.
@@ -128,16 +125,14 @@ Voer daarna iedere test afzonderlijk uit en controleer:
 
 Als de werkelijke uitvoer niet overeenkomt met je voorspelling, onderzoek dan waardoor het verschil ontstaat en pas je programma aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **datastructuurdiagram** en je uiteindelijke **Python-programma**.
 
 Waarom is de gekozen datastructuur geschikt om een ingevoerde leerling terug te vinden en te bepalen bij welk huis deze leerling hoort?
 
 Onderbouw je antwoord met een concreet voorbeeld uit je eigen datastructuurdiagram en programma.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

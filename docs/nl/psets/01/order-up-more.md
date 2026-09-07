@@ -4,6 +4,8 @@ template: pset.html
 week: 1
 level: more
 
+page_toc: true
+
 understanding:
   - python.sequential-execution
 ---
@@ -17,8 +19,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **een geordende reeks instructies formuleren** om een probleem op te lossen.
@@ -26,8 +27,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een geordende reeks instructies uitdrukken in Python**.
 
 
-## Probleem
-
+## Probleem {.page-toc}
 Een restaurant wil een digitale bestelzuil gebruiken voor tafels met meerdere personen.
 
 Aan een tafel zitten vier personen. Iedere persoon moet zelfstandig dezelfde vaste bestelroute kunnen doorlopen.
@@ -37,25 +37,23 @@ De bestelzuil moet steeds duidelijk maken wie aan de beurt is en iedere persoon 
 **Hoe ontwerp en programmeer je een bestelzuil waarmee vier personen achter elkaar zelfstandig dezelfde bestelroute kunnen doorlopen?**
 
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Order Up!** op te lossen.
 
 Ontwerp en programmeer een digitale bestelzuil voor een tafel van vier personen.
 
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - duidelijk maken wanneer de bestelroute begint;
@@ -78,8 +76,7 @@ Pas nadat een persoon de volledige route heeft doorlopen, begint de route van de
 Gebruik in Python `print()` en `input()`.
 
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 
@@ -135,8 +132,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
     Vertaal nu je eigen ontwerp in dezelfde volgorde naar Python.
 
 
-### Testen
-
+## Testen {.page-toc}
 Je bestelzuil werkt pas goed als alle vier personen dezelfde volledige bestelroute achter elkaar in de juiste volgorde kunnen doorlopen.
 
 Noteer eerst welke route één persoon moet volgen:
@@ -185,8 +181,7 @@ Als dat niet zo is, onderzoek dan welke stap in je sequentie niet op het verwach
 **Kun je met je drie tests aantonen dat vier personen achter elkaar dezelfde vaste bestelroute doorlopen en dat de volledige tafel pas na persoon 4 wordt afgerond?**
 
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

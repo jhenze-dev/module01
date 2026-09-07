@@ -1,7 +1,9 @@
-﻿---
+---
 title: Werken met Informatie
 template: week.html
 week: 2
+
+page_toc: false
 
 resources:
   - video.forrest-gump

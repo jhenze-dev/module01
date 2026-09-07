@@ -4,6 +4,8 @@ template: pset.html
 week: 5
 level: less
 
+page_toc: true
+
 understanding:
   - python.lists
   - python.list-indexes
@@ -21,28 +23,26 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 --8<-- "includes/badges.html:process-reflecting-solution"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 In deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **gegevens ordenen in een bruikbare structuur**.
 - Ik kan **informatie presenteren in een datastructuurdiagram**.
 - Ik kan **uitleggen waarom een gekozen datastructuur geschikt is voor een probleem**.
 
-## Probleem
-
+## Probleem {.page-toc}
 Op Hogwarts worden ieder jaar nieuwe leerlingen over verschillende huizen verdeeld.
 
 Wanneer er steeds meer leerlingen bijkomen, moet Hogwarts kunnen bijhouden welke leerlingen bij welk huis horen. Nieuwe leerlingen moeten kunnen worden toegevoegd en opgeslagen gegevens moeten later weer kunnen worden teruggevonden.
 
 **Hoe ontwerp je een programma dat meerdere gegevens overzichtelijk kan opslaan en terugvinden?**
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **House Administration** op te lossen.
 
 Ontwerp en programmeer een administratie waarmee Hogwarts leerlingen per huis kan bewaren en informatie over de opgeslagen leerlingen kan opvragen.
@@ -51,8 +51,7 @@ Maak voordat je programmeert een **datastructuurdiagram** waarin zichtbaar is we
 
 Werk daarna de stappen van je programma uit in **pseudocode** als genummerde comments in je `.py`-bestand. Bouw vervolgens de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Gebruik in je administratie de vier Hogwarts-huizen:
 
 - Gryffindor
@@ -71,8 +70,7 @@ Je programma moet:
 
 Nieuwe leerlingen moeten aan de bestaande gegevens worden toegevoegd. Eerder opgeslagen leerlingen mogen daarbij niet verdwijnen.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke gegevens moet je organiseren?"
@@ -109,8 +107,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Een list met drie items heeft dus de geldige indexes `0`, `1` en `2`.
 
-### Testen
-
+## Testen {.page-toc}
 Een administratie werkt pas betrouwbaar wanneer **toevoegen, tellen, controleren en terugvinden** de juiste resultaten geven.
 
 Voer minimaal de volgende tests uit.
@@ -137,16 +134,14 @@ Bepaal **vooraf** wat de verwachte uitkomst van iedere test is. Voer daarna je p
 
 Als de werkelijke uitvoer niet overeenkomt met je voorspelling, onderzoek dan waardoor het verschil ontstaat en pas je programma aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Bekijk je **datastructuurdiagram** en je uiteindelijke **Python-programma**.
 
 Waarom is de datastructuur die je hebt gekozen geschikt om de gegevens van dit probleem op te slaan en terug te vinden?
 
 Gebruik in je antwoord een concreet voorbeeld uit je eigen datastructuurdiagram of programma.
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je inlevert of:
 
 - je programma voldoet aan de specificatie;

@@ -1,6 +1,8 @@
-﻿---
+---
 title: Week 7 — Informatie interpreteren
 template: week.html
+
+page_toc: false
 ---
 
 # Week 7 — Informatie interpreteren

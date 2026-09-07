@@ -4,6 +4,8 @@ template: pset.html
 week: 2
 level: more
 
+page_toc: true
+
 understanding:
   - python.variables
   - python.arithmetic-expressions
@@ -19,8 +21,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan de benodigde **gegevens verzamelen** voor een analyse.
@@ -29,8 +30,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan informatie **presenteren in de gekozen representatievorm**.
 
 
-## Probleem
-
+## Probleem {.page-toc}
 In *Forrest Gump* zien we dat Forrest snel rent.
 
 Maar hoe snel rent hij eigenlijk?
@@ -42,27 +42,25 @@ Een computer kan alleen berekeningen uitvoeren wanneer informatie uit de werkeli
 **Hoe ontwerp je een systeem dat een loopprestatie omzet naar gegevens waarmee een computer snelheid en andere prestaties automatisch kan berekenen en presenteren?**
 
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
 [Meer over IPO-diagrammen](../../understanding/visual-first/ipo.md)
 
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **How Fast Is Forrest?** op te lossen.
 
 Ontwerp en programmeer een systeem dat verschillende gegevens over een loopprestatie combineert en daaruit een overzichtelijk prestatierapport maakt.
 
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Een looptest bestaat uit een aantal ronden van dezelfde lengte.
 
 Je programma vraagt de gebruiker om:
@@ -98,8 +96,7 @@ Waarden groter dan `0` zijn in deze Problem Set geldig.
 Andere invoer hoef je in deze Problem Set niet af te handelen.
 
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 
@@ -140,8 +137,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
     Kijk daarna naar de relaties tussen de gegevens in je eigen model en vertaal deze naar berekeningen met Python.
 
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als het voor verschillende loopprestaties steeds de juiste berekeningen en een overzichtelijke presentatie van de resultaten oplevert.
 
 Ontwerp zelf minimaal drie testgevallen.
@@ -191,8 +187,7 @@ Als dat niet zo is, onderzoek dan welke invoer, berekening of omzetting in je in
 **Kun je met je drie testgevallen aantonen dat je programma verschillende loopprestaties correct verwerkt en alle ingevoerde en berekende gegevens in het prestatierapport toont?**
 
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma verwerkt de **rondelengte**, het **aantal ronden** en de **totale looptijd**;

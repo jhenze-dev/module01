@@ -1,8 +1,10 @@
-﻿---
+---
 title: Order Up!
 template: pset.html
 week: 1
 level: less
+
+page_toc: true
 
 understanding:
   - python.sequential-execution
@@ -17,8 +19,7 @@ understanding:
 --8<-- "includes/badges.html:process-expressing"
 
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **een geordende reeks instructies formuleren** om een probleem op te lossen.
@@ -26,8 +27,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een geordende reeks instructies uitdrukken in Python**.
 
 
-## Probleem
-
+## Probleem {.page-toc}
 Een restaurant wil klanten zelfstandig een bestelling laten plaatsen met een digitale bestelzuil.
 
 Een klant moet zonder hulp van een medewerker kunnen begrijpen wat het systeem van hem vraagt. De bestelzuil moet daarom duidelijk communiceren en de klant stap voor stap door een vaste bestelroute leiden.
@@ -35,25 +35,23 @@ Een klant moet zonder hulp van een medewerker kunnen begrijpen wat het systeem v
 **Hoe ontwerp en programmeer je een bestelzuil waarmee één klant zelfstandig een volledige bestelroute kan doorlopen?**
 
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Order Up!** op te lossen.
 
 Ontwerp en programmeer een digitale bestelzuil voor één klant.
 
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - de klant duidelijk welkom heten;
@@ -70,8 +68,7 @@ De antwoorden van de klant veranderen deze volgorde niet. Ongeacht wat de klant 
 
 Gebruik in Python `print()` en `input()`.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 
@@ -118,8 +115,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
     Vertaal nu je eigen bestelroute in dezelfde volgorde naar Python.
 
 
-### Testen
-
+## Testen {.page-toc}
 Je bestelzuil werkt pas goed als een gebruiker de volledige bestelroute zelfstandig en in de ontworpen volgorde kan doorlopen.
 
 Noteer eerst welke route je programma moet volgen:
@@ -163,8 +159,7 @@ Als dat niet zo is, onderzoek dan welke stap in je sequentie niet op het verwach
 **Kun je met deze drie tests aantonen dat een gebruiker de volledige bestelroute zelfstandig kan doorlopen en dat verschillende antwoorden de vaste volgorde niet veranderen?**
 
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

@@ -1,7 +1,9 @@
-﻿---
+---
 title: Problem Set 1
 template: pset-index.html
 week: 1
+
+page_toc: false
 
 resources:
   - w3schools.week1

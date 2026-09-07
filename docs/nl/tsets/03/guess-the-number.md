@@ -1,7 +1,9 @@
-﻿---
+---
 title: Guess the Number
 template: tset.html
 week: 3
+
+page_toc: false
 
 understanding:
   - visual-first.flowcharts-decisions-branches

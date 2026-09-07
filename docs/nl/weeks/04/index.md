@@ -1,7 +1,9 @@
-﻿---
+---
 title: Blijven Herhalen
 template: week.html
 week: 4
+
+page_toc: false
 
 resources:
   - video.keep-the-change

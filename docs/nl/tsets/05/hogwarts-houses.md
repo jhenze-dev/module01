@@ -3,6 +3,8 @@ title: Hogwarts Houses
 template: tset.html
 week: 5
 
+page_toc: false
+
 understanding:
   - visual-first.data-structure-diagrams-basics
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bad Nut Check
 template: pset.html
 week: 4
@@ -6,6 +6,8 @@ level: less
 
 resources:
   - video.bad-nut-check
+
+page_toc: true
 
 understanding:
   - python.input-validation
@@ -23,8 +25,7 @@ understanding:
 
 --8<-- "includes/videos.html:bad-nut-check"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren** wanneer invoer wel of niet bruikbaar is.
@@ -32,8 +33,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een oplossing automatiseren** door voorwaarden voor geldige invoer vast te leggen.
 - Ik kan **een controlesysteem programmeren** dat invoer afwijst wanneer deze niet aan de voorwaarden voldoet.
 
-## Probleem
-
+## Probleem {.page-toc}
 In *Charlie and the Chocolate Factory* controleren de eekhoorns de noten van Willy Wonka.
 
 Een noot die niet voldoet aan de voorwaarden wordt afgekeurd.
@@ -44,16 +44,15 @@ Wanneer de invoer niet bruikbaar is, moet het systeem de invoer afwijzen en opni
 
 **Hoe ontwerp je een systeem dat invoer controleert en pas stopt wanneer bruikbare invoer is gegeven?**
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Bad Nut Check** op te lossen.
 
 Ontwerp en programmeer een controlesysteem dat invoer blijft controleren totdat bruikbare invoer wordt gegeven.
@@ -62,8 +61,7 @@ Werk je oplossing eerst uit als een **flowchart**.
 
 Zet daarna dezelfde oplossing om in **pseudocode**. Schrijf je pseudocode als genummerde comments in je `.py`-bestand en bouw daarna de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - de gebruiker om een noot vragen;
@@ -77,8 +75,7 @@ Het programma moet dus niet vooraf bepalen hoeveel pogingen nodig zijn.
 
 De gebruiker kan net zo lang ongeldige invoer geven als nodig is.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke invoer is bruikbaar?"
@@ -133,8 +130,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Bepaal daarna welke Python-instructies je nodig hebt om je ontwerp uit te voeren.
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als je controleert of **geldige en ongeldige invoer correct worden afgehandeld en het controleproces op het juiste moment stopt**.
 
 Voer minimaal de volgende tests uit:
@@ -165,8 +161,7 @@ Leg bij iedere test de **verwachte uitkomst** en de **werkelijke uitkomst** vast
 
 Als de werkelijke uitkomst niet overeenkomt met je verwachting, onderzoek dan waar het verschil ontstaat en pas je programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Beschrijf na het testen:
 
 1. **Hoe heb je gecontroleerd of je oplossing bleef werken wanneer meerdere ongeldige invoeren achter elkaar werden gegeven?**
@@ -177,8 +172,7 @@ Beschrijf na het testen:
 
 4. **Wat heb je veranderd nadat je je oplossing had getest?**
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

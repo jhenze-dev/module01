@@ -3,6 +3,8 @@ title: One by One
 template: tset.html
 week: 6
 
+page_toc: false
+
 understanding:
   - visual-first.trace-tables-basics
   - algorithms-efficiency.counting-operations-basics

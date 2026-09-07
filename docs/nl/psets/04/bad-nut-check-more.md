@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bad Nut Check
 template: pset.html
 week: 4
@@ -6,6 +6,8 @@ level: more
 
 resources:
   - video.bad-nut-check
+
+page_toc: true
 
 understanding:
   - python.input-validation
@@ -24,8 +26,7 @@ understanding:
 
 --8<-- "includes/videos.html:bad-nut-check"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren** hoe verschillende controles samen bepalen of invoer bruikbaar is.
@@ -33,8 +34,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een oplossing automatiseren** door meerdere voorwaarden en een stopvoorwaarde vast te leggen.
 - Ik kan **een controlesysteem programmeren** dat invoer blijft controleren totdat aan alle voorwaarden is voldaan.
 
-## Probleem
-
+## Probleem {.page-toc}
 In *Charlie and the Chocolate Factory* worden de controles van de eekhoorns steeds strenger.
 
 Invoer is niet automatisch bruikbaar omdat deze er op het eerste gezicht goed uitziet. Het systeem moet invoer eerst geschikt maken voor controle en daarna bepalen of deze aan alle voorwaarden voldoet.
@@ -43,16 +43,15 @@ De controle wordt herhaald totdat een bruikbare invoer wordt gevonden.
 
 **Hoe ontwerp je een controlesysteem dat verschillende schrijfwijzen kan verwerken en pas stopt wanneer aan alle voorwaarden is voldaan?**
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Bad Nut Check** op te lossen.
 
 Breid je controlesysteem uit zodat het invoer robuuster kan controleren.
@@ -61,8 +60,7 @@ Werk je oplossing eerst uit als een **flowchart**.
 
 Zet daarna dezelfde oplossing om in **pseudocode**. Schrijf je pseudocode als genummerde comments in je `.py`-bestand en bouw daarna de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - de gebruiker om een noot vragen;
@@ -79,8 +77,7 @@ Je bepaalt zelf welke **string methods** nodig zijn om de invoer te onderzoeken 
 
 Gebruik niet automatisch dezelfde bewerkingen voor iedere invoer. Bedenk per controle welke informatie je nodig hebt en welke bewerking daarbij past.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Welke controles moet je uitvoeren?"
@@ -145,8 +142,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Test vervolgens of jouw systeem deze invoer op dezelfde manier behandelt wanneer dat volgens jouw ontwerp hoort.
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als je controleert of **verschillende schrijfwijzen en verschillende ongeldige situaties correct worden afgehandeld**.
 
 Voer minimaal de volgende tests uit:
@@ -180,8 +176,7 @@ Leg bij iedere test de **verwachte uitkomst**, het **verwachte aantal pogingen**
 
 Als de werkelijke uitkomst niet overeenkomt met je verwachting, onderzoek dan waar het verschil ontstaat en pas je programma waar nodig aan.
 
-## Reflectie op de oplossing
-
+## Reflectie op de oplossing {.page-toc}
 Beschrijf na het testen:
 
 1. **Welke controle bleek het lastigst om goed te laten werken, en waarom?**
@@ -194,8 +189,7 @@ Beschrijf na het testen:
 
 5. **Hoe weet je dat je validatieproces niet te vroeg stopt en ook niet onnodig doorgaat?**
 
-## Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;

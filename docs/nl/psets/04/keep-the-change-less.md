@@ -1,8 +1,10 @@
-﻿---
+---
 title: Keep the Change
 template: pset.html
 week: 4
 level: less
+
+page_toc: true
 
 understanding:
   - python.while-loops
@@ -16,8 +18,7 @@ understanding:
 --8<-- "includes/badges.html:ct-algoritmen"
 --8<-- "includes/badges.html:process-expressing"
 
-## Waar werk je aan?
-
+## Waar werk je aan? {.page-toc}
 Met deze Problem Set werk je aan de volgende leerdoelen:
 
 - Ik kan **beredeneren** hoe een herhalend proces stap voor stap verandert.
@@ -25,8 +26,7 @@ Met deze Problem Set werk je aan de volgende leerdoelen:
 - Ik kan **een oplossing automatiseren** door herhalende stappen en een stopvoorwaarde vast te leggen.
 - Ik kan **een algoritmische oplossing programmeren** met een `while`-loop.
 
-## Probleem
-
+## Probleem {.page-toc}
 In *Home Alone* betaalt een klant meer voor zijn pizza dan nodig is.
 
 De pizzabezorger moet het juiste wisselgeld teruggeven. Daarbij moet het systeem bepalen welke munten samen het bedrag vormen.
@@ -37,16 +37,15 @@ Het proces gaat door totdat het volledige bedrag is teruggegeven.
 
 **Hoe ontwerp je een systeem dat stap voor stap wisselgeld teruggeeft en weet wanneer het klaar is?**
 
-## Demo
-
+## Demo {.page-toc}
 [DEMO LATER TOEVOEGEN]
 
-## Understanding
+## Understanding {.page-toc}
+### Python {.section-understanding .page-toc}
 
-{{ understanding_reference(understanding) }}
+{{ understanding_reference(understanding, domain="python") }}
 
-## Opdracht
-
+## Opdracht {.page-toc}
 Nu ga je deze kennis gebruiken om het probleem van **Keep the Change** op te lossen.
 
 Ontwerp en programmeer een systeem dat wisselgeld stap voor stap teruggeeft.
@@ -55,8 +54,7 @@ Werk je oplossing eerst uit als een **loop-flowchart**.
 
 Zet daarna dezelfde oplossing om in **pseudocode**. Schrijf je pseudocode als genummerde comments in je `.py`-bestand en bouw daarna de Python-code bij deze stappen.
 
-### Specificatie
-
+### Specificatie {.page-toc}
 Je programma moet:
 
 - een bedrag aan wisselgeld vragen;
@@ -75,8 +73,7 @@ Gebruik als invoer een **positief geheel aantal centen dat een veelvoud van 5 is
 
 Andere bedragen hoef je in deze Problem Set niet af te handelen.
 
-### Hints
-
+### Hints {.page-toc}
 Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
 ??? hint "1 — Wat verandert er tijdens het proces?"
@@ -145,8 +142,7 @@ Kom je niet verder? Open dan eerst alleen de hint die je nodig hebt.
 
     Programmeer vanuit je eigen ontwerp verder.
 
-### Testen
-
+## Testen {.page-toc}
 Een programma is pas betrouwbaar als je controleert of **het wisselgeld voor verschillende bedragen correct en volledig wordt teruggegeven**.
 
 Test minimaal de volgende situaties:
@@ -186,8 +182,7 @@ Controleer of dit werkelijke verloop overeenkomt met je voorspelling en uiteinde
 
 Als de werkelijke uitkomst niet overeenkomt met je verwachting, onderzoek dan waar het verschil ontstaat en pas je programma waar nodig aan.
 
-### Inleveren
-
+## Inleveren {.page-toc}
 Controleer voordat je de Problem Set afrondt:
 
 - je programma voldoet aan de **specificatie**;
