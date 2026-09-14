@@ -1,17 +1,17 @@
 weeks:
 
   0:
-    title: "Week 0"
+    title: "Week 0 Denken als een Computer"
 
     pset:
-      deadline: "2026-09-04 23:59"
+      deadline: "2026-09-21 23:59"
 
     vakflex:
-      - date: "2026-09-01"
-        topic: "Vakflex"
+      - date: "2026-09-16 08:30"
+        topic: "VakFlex: Getting started with Scratch"
 
-      - date: "2026-09-03"
-        topic: "Vakflex"
+      - date: "2026-09-16 09:10"
+        topic: "Vakflex: Van instructies naar Scratch"
 
 
   1:
