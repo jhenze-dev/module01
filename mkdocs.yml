@@ -71,6 +71,7 @@ extra_css:
   # Basis
   - assets/css/style.css
   - assets/css/navigation.css
+  - assets/css/tool-dock.css
 
   # Componenten
   - assets/css/reference.css
@@ -92,6 +93,7 @@ extra_css:
   
 extra_javascript:
   - assets/js/page-toc.js
+  - assets/js/tool-dock.js
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
