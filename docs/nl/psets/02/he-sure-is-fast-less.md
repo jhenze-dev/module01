@@ -8,6 +8,10 @@ page_toc: true
 
 understanding:
   - python.variables
+  - python.variable-names
+  - python.number-types
+  - python.converting-input
+  - python.arithmetic-operators
   - python.arithmetic-expressions
 ---
 

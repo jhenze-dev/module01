@@ -7,7 +7,11 @@ level: more
 page_toc: true
 
 understanding:
+  - python.statements
   - python.sequential-execution
+  - python.comments
+  - python.output
+  - python.input
 ---
 
 # Order Up!
