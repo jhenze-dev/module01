@@ -60,16 +60,13 @@ weeks:
     title: "Week 4"
 
     pset:
-      deadline: "2026-10-19 23:59"
+      deadline: "2026-11-02 23:59"
 
     vakflex:
-      - date: "2026-10-15 08:30"
-        topic: "Vakflex"
-
-      - date: "2026-10-15 09:10"
-        topic: "Vakflex"
-
-
+      - date: 2026-10-22 08:30
+        topic: While Loop
+      - date: 2026-10-22 09:10
+        topic: Input Validation
   5:
     title: "Week 5"
 
